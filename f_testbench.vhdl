@@ -39,10 +39,14 @@ begin
   begin
     wait on test_in_x, test_in_y, test_in_z;
     wait for 1 ns;
-    if ( ( test_in_x = '0' and test_in_y = '0' and test_out = '0' ) or
-         ( test_in_x = '0' and test_in_y = '1' and test_out = '1' ) or
-         ( test_in_x = '1' and test_in_y = '0' and test_out = '1' ) or
-         ( test_in_x = '1' and test_in_y = '1' and test_out = '1' ) 
+    if ( ( test_in_x = '0' and test_in_y = '0' and test_in_z = '0' and test_out = '0' ) or
+         ( test_in_x = '0' and test_in_y = '0' and test_in_z = '1' and test_out = '0' ) or
+         ( test_in_x = '0' and test_in_y = '1' and test_in_z = '0' and test_out = '0' ) or
+         ( test_in_x = '0' and test_in_y = '1' and test_in_z = '1' and test_out = '0' ) or
+         ( test_in_x = '1' and test_in_y = '0' and test_in_z = '0' and test_out = '1' ) or
+         ( test_in_x = '1' and test_in_y = '0' and test_in_z = '1' and test_out = '1' ) or
+         ( test_in_x = '1' and test_in_y = '1' and test_in_z = '0' and test_out = '0' ) or
+         ( test_in_x = '1' and test_in_y = '1' and test_in_z = '1' and test_out = '0' )
     )
     then
       error_status := false;
