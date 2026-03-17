@@ -1,8 +1,24 @@
 v 4
-file . "f_arch.vhdl" "7854057bb1bae38690f2e93faeadf0834c9b64d1" "20260312175953.864":
-  architecture comp of f_ent at 1( 0) + 0 on 65;
-file . "f_entity.vhdl" "e403ea74f85625e00b73b0f2a73ad6955d399bc9" "20260312172902.923":
-  entity f_ent at 1( 0) + 0 on 54;
-file . "f_testbench.vhdl" "4eac98c7c9e0099425cfd8f88baa917082a06c1e" "20260312180011.408":
-  entity f_ent_test_bench at 1( 0) + 0 on 66;
-  architecture test_bench of f_ent_test_bench at 7( 101) + 0 on 67;
+file . "or_entity.vhdl" "9f8c81f4a64b53b31bef07a161a88755e35d2c94" "20260315214328.768":
+  entity or_ent at 1( 0) + 0 on 83;
+file . "and_entity.vhdl" "a3e6dd96095fe46a078845725f16f4629e09c613" "20260315214320.092":
+  entity and_ent at 1( 0) + 0 on 81;
+file . "f_arch_comp.vhdl" "5a4bc1d3c93d0720d0fd79f2b034ac5c5462a6eb" "20260317165649.615":
+  architecture comp2 of f_ent at 1( 0) + 0 on 102;
+file . "not_entity.vhdl" "3450b17e5bde70ce9a27ac78191b90d1d0e8f691" "20260315214337.615":
+  entity not_ent at 1( 0) + 0 on 85;
+file . "f_arch.vhdl" "7e532275e28e66eca09105c8afc4c58e090fc1d1" "20260317165529.118":
+  architecture comp of f_ent at 1( 0) + 0 on 97;
+file . "f_entity.vhdl" "e403ea74f85625e00b73b0f2a73ad6955d399bc9" "20260317165523.456":
+  entity f_ent at 1( 0) + 0 on 96;
+file . "f_testbench.vhdl" "ca0a8e83fb04c72f555de76223a5b30ca79ccc1e" "20260317165613.065":
+  entity f_ent_test_bench at 1( 0) + 0 on 98;
+  architecture test_bench of f_ent_test_bench at 7( 101) + 0 on 99;
+  configuration cfg_comp at 67( 2659) + 0 on 100;
+  configuration cfg_comp2 at 75( 2977) + 0 on 101;
+file . "not_arch.vhdl" "2348207458cced9cd4260d5edc8be1fb8854e288" "20260315214340.311":
+  architecture not1 of not_ent at 1( 0) + 0 on 86;
+file . "and_arch.vhdl" "176cf85bac49ef4bf02d61b2927fb76b6f238254" "20260315214323.794":
+  architecture and1 of and_ent at 1( 0) + 0 on 82;
+file . "or_arch.vhdl" "1f2d747ec653b702b8d6e07c00a3536a23e2e4b1" "20260315214332.567":
+  architecture or1 of or_ent at 1( 0) + 0 on 84;

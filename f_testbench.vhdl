@@ -63,3 +63,19 @@ begin
       severity note;
   end process verif;
 end architecture Test_bench;
+
+configuration cfg_comp of f_ent_test_bench is                                                                                                                                         
+    for Test_bench
+      for UUT : f_ent
+        use entity work.f_ent(Comp);
+      end for;
+    end for;
+end configuration cfg_comp;
+
+configuration cfg_comp2 of f_ent_test_bench is
+  for Test_bench
+    for UUT : f_ent
+      use entity work.f_ent(Comp2);
+    end for;
+  end for;
+end configuration cfg_comp2;

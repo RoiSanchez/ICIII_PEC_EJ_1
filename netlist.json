@@ -1,0 +1,519 @@
+{
+  "creator": "Yosys 0.36+42 (git sha1 70d35314d, clang 11.0.1-2 -fPIC -Os)",
+  "modules": {
+    "and_ent": {
+      "attributes": {
+      },
+      "ports": {
+        "x0": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "x1": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "y0": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "\\36": {
+          "hide_name": 0,
+          "type": "$and",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 1,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "x0": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        },
+        "x1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "y0": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "f_ent": {
+      "attributes": {
+        "top": 1
+      },
+      "ports": {
+        "x": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "y": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "z": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "F": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+        "and_1": {
+          "hide_name": 0,
+          "type": "and_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "x1": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 3 ],
+            "x1": [ 4 ],
+            "y0": [ 6 ]
+          }
+        },
+        "and_2": {
+          "hide_name": 0,
+          "type": "and_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "x1": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 2 ],
+            "x1": [ 7 ],
+            "y0": [ 8 ]
+          }
+        },
+        "and_3": {
+          "hide_name": 0,
+          "type": "and_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "x1": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 9 ],
+            "x1": [ 3 ],
+            "y0": [ 10 ]
+          }
+        },
+        "and_4": {
+          "hide_name": 0,
+          "type": "and_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "x1": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 11 ],
+            "x1": [ 12 ],
+            "y0": [ 13 ]
+          }
+        },
+        "and_5": {
+          "hide_name": 0,
+          "type": "and_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "x1": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 13 ],
+            "x1": [ 8 ],
+            "y0": [ 14 ]
+          }
+        },
+        "not_1": {
+          "hide_name": 0,
+          "type": "not_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 3 ],
+            "y0": [ 7 ]
+          }
+        },
+        "not_2": {
+          "hide_name": 0,
+          "type": "not_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 6 ],
+            "y0": [ 12 ]
+          }
+        },
+        "not_3": {
+          "hide_name": 0,
+          "type": "not_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 2 ],
+            "y0": [ 9 ]
+          }
+        },
+        "or_1": {
+          "hide_name": 0,
+          "type": "or_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "x1": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 2 ],
+            "x1": [ 7 ],
+            "y0": [ 11 ]
+          }
+        },
+        "or_2": {
+          "hide_name": 0,
+          "type": "or_ent",
+          "parameters": {
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "x0": "input",
+            "x1": "input",
+            "y0": "output"
+          },
+          "connections": {
+            "x0": [ 14 ],
+            "x1": [ 10 ],
+            "y0": [ 5 ]
+          }
+        }
+      },
+      "netnames": {
+        "F": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "and_1:7": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "and_2:13": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "and_3:19": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "and_4:22": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "and_5:25": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "not_1:1": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "not_2:10": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "not_3:16": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "or_1:4": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "or_2:28": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+          }
+        },
+        "s0": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+          }
+        },
+        "s1": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+          }
+        },
+        "s2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+          }
+        },
+        "s3": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+          }
+        },
+        "s4": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+          }
+        },
+        "s5": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+          }
+        },
+        "s6": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+          }
+        },
+        "s7": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+          }
+        },
+        "s8": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+          }
+        },
+        "x": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        },
+        "y": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "z": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "not_ent": {
+      "attributes": {
+      },
+      "ports": {
+        "x0": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "y0": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+        "\\32": {
+          "hide_name": 0,
+          "type": "$not",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 1,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "Y": [ 3 ]
+          }
+        }
+      },
+      "netnames": {
+        "x0": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        },
+        "y0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        }
+      }
+    },
+    "or_ent": {
+      "attributes": {
+      },
+      "ports": {
+        "x0": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "x1": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "y0": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+        "\\34": {
+          "hide_name": 0,
+          "type": "$or",
+          "parameters": {
+            "A_SIGNED": 0,
+            "A_WIDTH": 1,
+            "B_SIGNED": 0,
+            "B_WIDTH": 1,
+            "Y_WIDTH": 1
+          },
+          "attributes": {
+          },
+          "port_directions": {
+            "A": "input",
+            "B": "input",
+            "Y": "output"
+          },
+          "connections": {
+            "A": [ 2 ],
+            "B": [ 3 ],
+            "Y": [ 4 ]
+          }
+        }
+      },
+      "netnames": {
+        "x0": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+          }
+        },
+        "x1": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+          }
+        },
+        "y0": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,3 @@
-use std.textio.all;
-
 architecture Comp of f_ent is
 
 begin
